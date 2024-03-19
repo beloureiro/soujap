@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: transparent; /* Fundo transparente */
+}
+
+.widget-contato {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.icone {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    color: #a12515; /* Vermelho*/
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #000000; /* Fundo preto */
+}
+
+.icone:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efeito suave ao passar o mouse */
+}
+
+/* Cores personalizadas para ícones de contato específicos, se necessário */
+.whatsapp { color: #a12515; }
+.instagram { color: #a12515; }
+.localizacao { color: #a12515; }
+.telefone { color: #a12515; }
