@@ -14,18 +14,19 @@ body {
     display: inline-block;
     padding: 10px;
     border-radius: 8px; /* Bordas ligeiramente arredondadas */
-    color: #a12515; /* Vermelho*/
+    color: #c92e1a; /* Vermelho */
     text-decoration: none;
     font-size: 24px;
     background-color: #000000; /* Fundo preto */
 }
 
 .icone:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Efeito suave ao passar o mouse */
+    background-color: #c92e1a; /* Fundo vermelho no hover */
+    color: #000000; /* Ícone preto no hover */
 }
 
 /* Cores personalizadas para ícones de contato específicos, se necessário */
-.whatsapp { color: #a12515; }
-.instagram { color: #a12515; }
-.localizacao { color: #a12515; }
-.telefone { color: #a12515; }
+.whatsapp { color: #c92e1a; }
+.instagram { color: #c92e1a; }
+.localizacao { color: #c92e1a; }
+.telefone { color: #c92e1a; }
