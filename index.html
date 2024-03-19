@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Widget de Contato soujap</title>
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<div class="widget-contato">
+    <!-- Ícones de contato -->
+    <a href="https://wa.me/351915542701" class="icone whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/4menu.today" class="icone instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="https://maps.app.goo.gl/wNdNeVn9CcURTLTd9" class="icone localizacao" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i></a>
+    <a href="tel:+351915542701" class="icone telefone"><i class="fas fa-phone"></i></a>
+</div>
+
+<script>
+    window.onload = function() {
+        var links = document.querySelectorAll('a');
+        links.forEach(function(link) {
+            // Aqui você garante que todos os links, exceto 'tel:', sejam abertos no contexto pai.
+            if (link.href.startsWith('tel:')) {
+                link.target = "_self";
+            } else {
+                link.target = "_parent";
+            }
+        });
+    };
+</script>
+
+</body>
+</html>
