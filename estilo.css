@@ -56,7 +56,7 @@ body {
 }
 
 .language {
-    font-size: 16px; /* Reduz o tamanho da fonte */
+    font-size: 14px; /* Reduz o tamanho da fonte */
     padding: 8px 10px; /* Ajuste do padding para melhor acomodar o texto */
     display: flex;
     align-items: center; /* Alinha o ícone e o texto verticalmente */
