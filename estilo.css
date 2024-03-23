@@ -7,7 +7,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 20px; /* Espaço abaixo dos ícones de contato */
 }
 
 .icone {
@@ -29,24 +28,25 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px; /* Espaço acima dos seletores de idioma */
     position: relative; /* Para posicionar a linha e o ponto divisórios corretamente */
+    padding-top: 30px; /* Espaçamento acima dos seletores de idioma para a linha */
 }
 
 .language-selector::before {
     content: '';
     position: absolute;
-    top: -20px; /* Posição acima dos seletores de idioma */
+    top: 0; /* Linha no topo do padding dos seletores de idioma */
     left: 0;
     right: 0;
     height: 1px; /* Define a espessura da linha */
     background-color: #c92e1a; /* Cor da linha */
+    z-index: -1; /* Garante que a linha não cubra os ícones ou texto */
 }
 
 .language-selector::after {
     content: '';
     position: absolute;
-    top: -24px; /* Centraliza o ponto em relação à linha */
+    top: -4px; /* Ajusta a posição do ponto em relação à linha */
     left: 50%;
     width: 8px; /* Tamanho do ponto */
     height: 8px; /* Tamanho do ponto */
