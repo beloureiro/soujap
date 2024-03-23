@@ -46,7 +46,7 @@ body {
 .language-selector::after {
     content: '';
     position: absolute;
-    top: -4px; /* Ajusta a posição do ponto em relação à linha */
+    top: 0px; /* Ajusta a posição do ponto em relação à linha */
     left: 50%;
     width: 8px; /* Tamanho do ponto */
     height: 8px; /* Tamanho do ponto */
