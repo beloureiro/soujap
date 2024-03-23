@@ -35,7 +35,7 @@ body {
 .language-selector::before {
     content: '';
     position: absolute;
-    top: 0; /* Linha no topo do padding dos seletores de idioma */
+    top: 10px; /* Linha no topo do padding dos seletores de idioma */
     left: 0;
     right: 0;
     height: 1px; /* Define a espessura da linha */
