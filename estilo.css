@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 20px 0;
+    margin-bottom: 20px; /* Espaço abaixo dos ícones de contato */
 }
 
 .icone {
@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 40px; /* Espaço adicional em cima para a linha e o ponto */
+    margin-top: 20px; /* Espaço acima dos seletores de idioma */
     position: relative; /* Para posicionar a linha e o ponto divisórios corretamente */
 }
 
@@ -56,13 +56,14 @@ body {
 }
 
 .language {
-    font-size: 14px; /* Reduz o tamanho da fonte */
+    font-size: 16px; /* Reduz o tamanho da fonte */
     padding: 8px 10px; /* Ajuste do padding para melhor acomodar o texto */
     display: flex;
     align-items: center; /* Alinha o ícone e o texto verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     color: #c92e1a; /* Cor do texto para os seletores de idioma */
     background-color: transparent; /* Fundo transparente para os seletores de idioma */
+    text-decoration: none; /* Remove sublinhado dos links */
 }
 
 .language i {
