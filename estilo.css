@@ -46,13 +46,13 @@ body {
 .language-selector::after {
     content: '';
     position: absolute;
-    top: 0px; /* Ajusta a posição do ponto em relação à linha */
+    top: 6px; /* Centraliza o ponto na espessura da linha */
     left: 50%;
     width: 8px; /* Tamanho do ponto */
     height: 8px; /* Tamanho do ponto */
     background-color: #c92e1a; /* Cor do ponto */
     border-radius: 50%; /* Torna o ponto redondo */
-    transform: translateX(-50%); /* Centraliza o ponto exatamente */
+    transform: translate(-50%, -50%); /* Centraliza o ponto exatamente */
 }
 
 .language {
