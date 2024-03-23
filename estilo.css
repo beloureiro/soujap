@@ -8,6 +8,7 @@ body {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
+    position: relative; /* Para posicionar a linha e o ponto divisórios corretamente */
 }
 
 .icone, .language {
@@ -26,30 +27,29 @@ body {
 }
 
 .language-selector {
-    position: relative; /* Posicionamento relativo para a linha e o ponto */
-    padding-bottom: 10px; /* Espaço adicional em baixo para a linha */
+    margin-top: 40px; /* Espaço adicional em cima para a linha e o ponto */
 }
 
-.language-selector::after {
+.language-selector::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: -20px; /* Posição acima dos seletores de idioma */
     left: 0;
     right: 0;
     height: 1px; /* Define a espessura da linha */
     background-color: #c92e1a; /* Cor da linha */
 }
 
-.language-selector::before {
+.language-selector::after {
     content: '';
     position: absolute;
-    bottom: -6px; /* Ajusta a posição do ponto para abaixo da linha */
+    top: -24px; /* Centraliza o ponto em relação à linha */
     left: 50%;
-    transform: translateX(-50%);
-    height: 12px; /* Altura do ponto */
-    width: 12px; /* Largura do ponto */
+    width: 8px; /* Tamanho do ponto */
+    height: 8px; /* Tamanho do ponto */
     background-color: #c92e1a; /* Cor do ponto */
-    border-radius: 50%; /* Torna o ponto circular */
+    border-radius: 50%; /* Torna o ponto redondo */
+    transform: translateX(-50%); /* Centraliza o ponto exatamente */
 }
 
 .language {
