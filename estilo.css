@@ -3,14 +3,14 @@ body {
     background-color: transparent; /* Fundo transparente */
 }
 
-.widget-contato {
+.widget-contato, .language-selector {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
 }
 
-.icone {
+.icone, .language {
     display: inline-block;
     padding: 10px;
     border-radius: 8px; /* Bordas ligeiramente arredondadas */
@@ -20,13 +20,18 @@ body {
     background-color: #000000; /* Fundo preto */
 }
 
-.icone:hover {
+.icone:hover, .language:hover {
     background-color: #c92e1a; /* Fundo vermelho no hover */
-    color: #000000; /* Ícone preto no hover */
+    color: #000000; /* Ícone/texto preto no hover */
 }
 
-/* Cores personalizadas para ícones de contato específicos, se necessário */
-.whatsapp { color: #c92e1a; }
-.instagram { color: #c92e1a; }
-.localizacao { color: #c92e1a; }
-.telefone { color: #c92e1a; }
+/* Estilos para o texto do seletor de idiomas */
+.language {
+    font-size: 16px; /* Tamanho de fonte menor para o texto do idioma */
+    padding: 8px 10px; /* Ajuste do padding para melhor acomodar o texto */
+}
+
+/* Ajustes no ícone do globo para idiomas, se necessário */
+.language i {
+    margin-right: 5px; /* Adiciona espaço entre o ícone e o texto */
+}
