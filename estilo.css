@@ -3,31 +3,34 @@ body {
     background-color: transparent; /* Fundo transparente */
 }
 
-.widget-contato, .language-selector {
+.widget-contato {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
-    position: relative; /* Para posicionar a linha e o ponto divisórios corretamente */
 }
 
-.icone, .language {
+.icone {
     display: inline-block;
     padding: 10px;
     border-radius: 8px; /* Bordas ligeiramente arredondadas */
     color: #c92e1a; /* Vermelho */
     text-decoration: none;
     font-size: 24px;
-    background-color: #000000; /* Fundo preto */
+    background-color: transparent; /* Fundo transparente para os ícones */
 }
 
-.icone:hover, .language:hover {
+.icone:hover {
     background-color: #c92e1a; /* Fundo vermelho no hover */
     color: #000000; /* Ícone/texto preto no hover */
 }
 
 .language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-top: 40px; /* Espaço adicional em cima para a linha e o ponto */
+    position: relative; /* Para posicionar a linha e o ponto divisórios corretamente */
 }
 
 .language-selector::before {
@@ -58,8 +61,16 @@ body {
     display: flex;
     align-items: center; /* Alinha o ícone e o texto verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
+    color: #c92e1a; /* Cor do texto para os seletores de idioma */
+    background-color: transparent; /* Fundo transparente para os seletores de idioma */
 }
 
 .language i {
     margin-right: 5px; /* Adiciona espaço entre o ícone e o texto */
+    color: inherit; /* Os ícones herdam a cor do texto do seletor de idioma */
+}
+
+.language:hover {
+    background-color: #c92e1a; /* Fundo vermelho no hover */
+    color: #000000; /* Texto preto no hover */
 }
