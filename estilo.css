@@ -8,6 +8,7 @@ body {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
+    position: relative; /* Para posicionar a linha divisória corretamente */
 }
 
 .icone, .language {
@@ -25,13 +26,25 @@ body {
     color: #000000; /* Ícone/texto preto no hover */
 }
 
-/* Estilos para o texto do seletor de idiomas */
-.language {
-    font-size: 16px; /* Tamanho de fonte menor para o texto do idioma */
-    padding: 8px 10px; /* Ajuste do padding para melhor acomodar o texto */
+.language-selector::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px; /* Define a espessura da linha */
+    background-color: #c92e1a; /* Cor da linha */
+    transform: translateY(-50%);
 }
 
-/* Ajustes no ícone do globo para idiomas, se necessário */
+.language {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    padding: 8px 10px; /* Ajuste do padding para melhor acomodar o texto */
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
 .language i {
     margin-right: 5px; /* Adiciona espaço entre o ícone e o texto */
 }
